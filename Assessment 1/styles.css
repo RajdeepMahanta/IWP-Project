@@ -297,6 +297,97 @@ body {
     background-color: #219150;
 }
 
+/*FAB in shop*/
+.floating-cart-button {
+    position: fixed;
+    bottom: 80px; /* Position above the footer */
+    right: 20px;
+    background-color: white; /* Change background to white */
+    border-radius: 50%;
+    width: 70px; /* Increase size */
+    height: 70px; /* Increase size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+    text-decoration: none;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.floating-cart-button img {
+    width: 32px; /* Adjust icon size */
+    height: 32px;
+}
+
+/*Cart page*/
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.cart-item-image {
+    width: 200px; /* Increase size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    margin-left: 15px;
+}
+
+.cart-total {
+    margin-top: 20px; /* Space above total */
+}
+
+.checkout {
+    margin-top: 20px; /* Space above checkout button */
+    padding: 10px 20px;
+    background-color: #28a745; /* Adjust color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-price{
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/*Remove button*/
+.remove-from-cart {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Change to red for a remove button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between title and button */
+    margin-right: 15px;
+}
+
+.remove-from-cart:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.checkout {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green for checkout */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
 
 /* Light blue background: #e0f7fa */
 /* RED: ef476f */
